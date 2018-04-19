@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        var is_a_valid_token = false
+        // Check if there is a token on the keychain
+        if let token = KeychainWrapper.standard.string(forKey: "UserToken") {
+            is_a_valid_token = true  // and validate it in the BackEnd
+    
+            if is_a_valid_token {
+                let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let navMain = mainStoryboard.instantiateViewController(withIdentifier: "navMain") as! UINavigationController
+                self.window?.rootViewController = navMain
+            }
+        }
         return true
     }
 
