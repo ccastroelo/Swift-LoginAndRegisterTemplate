@@ -84,6 +84,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA0DE5D120890A9100C1D3BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA3E399D2087BC6200D28875 /* AppDelegate.swift */,
+				CA3E399F2087BC6200D28875 /* LoginVc.swift */,
+				CA3E39D52087F7D700D28875 /* AnotherStuffsVc.swift */,
+				CA3E39CF2087BE6B00D28875 /* MainOneVc.swift */,
+				CA3E39D32087F72F00D28875 /* MainTwoVc.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CA3224532087FF41000111BE /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,16 +128,12 @@
 		CA3E399C2087BC6200D28875 /* LoginAndRegisterTut */ = {
 			isa = PBXGroup;
 			children = (
+				CA0DE5D120890A9100C1D3BC /* Views */,
 				CA3224532087FF41000111BE /* Keychain */,
 				CA3E39A12087BC6200D28875 /* Main.storyboard */,
 				CA3E39A42087BC6400D28875 /* Assets.xcassets */,
 				CA3E39A62087BC6400D28875 /* LaunchScreen.storyboard */,
 				CA3E39A92087BC6400D28875 /* Info.plist */,
-				CA3E399D2087BC6200D28875 /* AppDelegate.swift */,
-				CA3E399F2087BC6200D28875 /* LoginVc.swift */,
-				CA3E39D52087F7D700D28875 /* AnotherStuffsVc.swift */,
-				CA3E39CF2087BE6B00D28875 /* MainOneVc.swift */,
-				CA3E39D32087F72F00D28875 /* MainTwoVc.swift */,
 			);
 			path = LoginAndRegisterTut;
 			sourceTree = "<group>";
