@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,7 +46,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D9x-2f-6qs">
-                                <rect key="frame" x="93" y="384" width="189" height="30"/>
+                                <rect key="frame" x="75" y="384" width="225" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Or click here to access some content without login (apple rules)"/>
                                 <connections>
@@ -61,14 +62,13 @@
                             <constraint firstItem="fLj-US-ZGF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KTd-GI-6AP"/>
                             <constraint firstItem="vNW-6y-ZNL" firstAttribute="top" secondItem="mUW-5K-WDP" secondAttribute="bottom" constant="27" id="Lvi-1Z-x2q"/>
                             <constraint firstItem="EYp-if-1pk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PZ3-SG-o5B"/>
+                            <constraint firstItem="D9x-2f-6qs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="Qch-hw-Y6Z"/>
                             <constraint firstItem="D9x-2f-6qs" firstAttribute="top" secondItem="fLj-US-ZGF" secondAttribute="bottom" constant="36" id="Rh4-WD-gU9"/>
                             <constraint firstItem="D9x-2f-6qs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VhI-yd-vIh"/>
                             <constraint firstItem="vNW-6y-ZNL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Y8V-0c-u24"/>
                             <constraint firstItem="mUW-5K-WDP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Zoq-6P-4lW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mUW-5K-WDP" secondAttribute="trailing" constant="82" id="cnP-ed-ayY"/>
-                            <constraint firstItem="D9x-2f-6qs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="pkU-ZI-sVI"/>
                             <constraint firstItem="EYp-if-1pk" firstAttribute="top" secondItem="vNW-6y-ZNL" secondAttribute="bottom" constant="19" id="qJa-7M-06O"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D9x-2f-6qs" secondAttribute="trailing" constant="93" id="xWp-pU-n7s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
