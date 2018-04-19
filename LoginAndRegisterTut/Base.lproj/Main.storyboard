@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-US-ZGF">
-                                <rect key="frame" x="106" y="318.5" width="164" height="30"/>
+                                <rect key="frame" x="106" y="318" width="164" height="30"/>
                                 <state key="normal" title="New user, go to register"/>
                                 <connections>
                                     <segue destination="bpX-xl-dwU" kind="show" id="tfU-2u-3tE"/>
@@ -44,6 +44,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="D9x-2f-6qs">
+                                <rect key="frame" x="93" y="384" width="189" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Or click here to access some content without login (apple rules)"/>
+                                <connections>
+                                    <action selector="noLoginAccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIS-y7-ceq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -53,10 +61,14 @@
                             <constraint firstItem="fLj-US-ZGF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KTd-GI-6AP"/>
                             <constraint firstItem="vNW-6y-ZNL" firstAttribute="top" secondItem="mUW-5K-WDP" secondAttribute="bottom" constant="27" id="Lvi-1Z-x2q"/>
                             <constraint firstItem="EYp-if-1pk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PZ3-SG-o5B"/>
+                            <constraint firstItem="D9x-2f-6qs" firstAttribute="top" secondItem="fLj-US-ZGF" secondAttribute="bottom" constant="36" id="Rh4-WD-gU9"/>
+                            <constraint firstItem="D9x-2f-6qs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VhI-yd-vIh"/>
                             <constraint firstItem="vNW-6y-ZNL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Y8V-0c-u24"/>
                             <constraint firstItem="mUW-5K-WDP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="Zoq-6P-4lW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mUW-5K-WDP" secondAttribute="trailing" constant="82" id="cnP-ed-ayY"/>
+                            <constraint firstItem="D9x-2f-6qs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="pkU-ZI-sVI"/>
                             <constraint firstItem="EYp-if-1pk" firstAttribute="top" secondItem="vNW-6y-ZNL" secondAttribute="bottom" constant="19" id="qJa-7M-06O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D9x-2f-6qs" secondAttribute="trailing" constant="93" id="xWp-pU-n7s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -64,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="955"/>
+            <point key="canvasLocation" x="637.60000000000002" y="954.87256371814101"/>
         </scene>
         <!--Register-->
         <scene sceneID="L13-Hv-grj">
